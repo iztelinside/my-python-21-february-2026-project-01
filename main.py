@@ -33,12 +33,20 @@ print(len(listNumbers))
 listNumbers.insert(2, 105)
 print(listNumbers)
 
-len = int(input("Enter the length of the list: "))
-element_list = []
+# len = int(input("Enter the length of the list: "))
+# element_list = []
+# i = 0
+# while i < len:
+#     string = input("Enter the element #"+ str(i+1)+ ":")
+#     element_list.append(string)
+#     # element_list.append(element_list[i])
+#     i += 1
+# print(element_list)
+textSlogan = "Power is nothing without control"
+slogan = textSlogan.split(" ")
+print(slogan)
 i = 0
-while i < len:
-    string = input("Enter the element #"+ str(i+1)+ ":")
-    element_list.append(string)
-    # element_list.append(element_list[i])
-    i += 1
-print(element_list)
+for i in range(len(slogan)):
+    slogan[i] = slogan[i].capitalize()
+print(slogan)
+
