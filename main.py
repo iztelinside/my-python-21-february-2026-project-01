@@ -1,3 +1,4 @@
+from itertools import count
 
 # number = 100
 # text = "Hello World!"
@@ -49,4 +50,10 @@ i = 0
 for i in range(len(slogan)):
     slogan[i] = slogan[i].capitalize()
 print(slogan)
-
+data = (100, 60, 70, 80, 500)
+print(type(data))
+print(len(data))
+print(max(data))
+print(min(data))
+print(sum(data))
+print(data)
