@@ -1,9 +1,9 @@
-# data = input("Enter Your Text:")
+# module
 
-
-file = open("data/text.txt", "w")
-file.write("Hello World")
-file.close()
+import datetime as dt
+print(dt.datetime.today())
+print(dt.datetime.now().time())
+print(dt.datetime.now())
 
 
 # def createWorst(elementOne, elementTwo):
