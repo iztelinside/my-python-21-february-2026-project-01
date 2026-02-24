@@ -5,7 +5,10 @@ print(dt.datetime.today())
 print(dt.datetime.now().time())
 print(dt.datetime.now())
 
-
+from math import sqrt as sq
+from math import pi as pi
+print(sq(2))
+print(pi)
 # def createWorst(elementOne, elementTwo):
 #     print("Hello " + elementOne + " " + elementTwo)
 
