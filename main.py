@@ -1,3 +1,29 @@
+
+#19 – Наследование, инкапсуляция, полиморфизм
+class Plane:
+    name = None
+    year = None
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+
+#18 – Конструкторы, переопределение методов
+class Cars:
+    name = "Audi"
+    price = "$20000"
+    power = 500
+    def __init__(self, name, price, power):
+        self.name = name
+        self.price = price
+        self.power = power
+    def set_data(self, name, price, power):...
+
+    def get_data(self):...
+
+
+car1 = Cars("Audi", 20000, 500)
+car2 = Cars("BMW", 30000, 600)
+
 #17 – Основы ООП. Создание класса и объекта
 class Person:
     name  = None
