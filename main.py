@@ -7,15 +7,41 @@ class Techno:
         self.name = name
         self.year = year
     def get_info(self):
-        print("Plane Name:", self.name, "Year", self.year)
+        print("Techno Name:", self.name, "Year", self.year)
 
 
+class Car(Techno):
+    awd = True
+    def __init__(self,name, year, awd):
+        super().__init__(name, year)
+        self.awd = awd
+
+    def get_info(self):
+        print("Car Name:", self.name, "Year:", self.year, "All Wheel Drive:", self.awd)
 
 class Plane(Techno):
-    pass
-plane = Plane("Airbus", 1999)
-plane.get_info()
+    maxSpeed = 2000
+    def __init__(self, name, year, maxSpeed):
+        super().__init__(name, year)
+        self.maxSpeed = maxSpeed
+    def get_info(self):
+        print("Plane Name:", self.name, "Year:", self.year, "Max Speed:", self.maxSpeed)
 
+class Bike(Techno):
+    country = "Italy"
+    def __init__(self, name, year, country):
+        super().__init__(name, year)
+        self.country = country
+    def get_info(self):
+        print("Bike Name:", self.name, "Year:", self.year, "Country:", self.country)
+car = Car( "Audi", 1999, True)
+car.get_info()
+plane = Plane("Airbus", 2010, 2000)
+plane.get_info()
+bike = Bike("Ducati", 2025, "Italy")
+bike.get_info()
+# plane = Plane(Techno)
+# plane.get_info()
 # print(plane2.get_info())
 # print(plane2.year)
 #18 – Конструкторы, переопределение методов
