@@ -1,62 +1,73 @@
 
 #19 – Наследование, инкапсуляция, полиморфизм
-class Plane:
+class Techno:
     name = None
     year = None
     def __init__(self, name, year):
         self.name = name
         self.year = year
+    def get_info(self):
+        print("Plane Name:", self.name, "Year", self.year)
 
+
+
+class Plane(Techno):
+    pass
+plane = Plane("Airbus", 1999)
+plane.get_info()
+
+# print(plane2.get_info())
+# print(plane2.year)
 #18 – Конструкторы, переопределение методов
-class Cars:
-    name = "Audi"
-    price = "$20000"
-    power = 500
-    def __init__(self, name, price, power):
-        self.name = name
-        self.price = price
-        self.power = power
-    def set_data(self, name, price, power):...
+# class Cars:
+#     name = "Audi"
+#     price = "$20000"
+#     power = 500
+#     def __init__(self, name, price, power):
+#         self.name = name
+#         self.price = price
+#         self.power = power
+#     def set_data(self, name, price, power):...
+#
+#     def get_data(self):...
 
-    def get_data(self):...
 
-
-car1 = Cars("Audi", 20000, 500)
-car2 = Cars("BMW", 30000, 600)
+# car1 = Cars("Audi", 20000, 500)
+# car2 = Cars("BMW", 30000, 600)
 
 #17 – Основы ООП. Создание класса и объекта
-class Person:
-    name  = None
-    age = None
-    isMale = True
+# class Person:
+#     name  = None
+#     age = None
+#     isMale = True
+#
+#     def self_data(self, name, age, isMale):
+#         self.name = name
+#         self.age = age
+#         self.isMale = isMale
+#     def get_data(self, name, age, isMale):
+#         print(self.name, "age:", self.age, "isMale: ",self.isMale)
 
-    def self_data(self, name, age, isMale):
-        self.name = name
-        self.age = age
-        self.isMale = isMale
-    def get_data(self, name, age, isMale):
-        print(self.name, "age:", self.age, "isMale: ",self.isMale)
-
-personSelf = Person()
-personSelf.self_data('Red', 26, True)
-personSelf.self_data('John', 26, True)
-personSelf.get_data('John', 26, True)
-print(personSelf.name)
-print(personSelf.age)
-person1 = Person()
-person1.name = "Dan"
-person1.age = 20
-person1.isMale = True
-print(person1.name)
-print(person1.age)
-
-
-person2 = Person()
-person2.name = "Victoria"
-person2.age = 30
-person2.isMale = False
-print(person2.name)
-print(person2)
+# personSelf = Person()
+# personSelf.self_data('Red', 26, True)
+# personSelf.self_data('John', 26, True)
+# personSelf.get_data('John', 26, True)
+# print(personSelf.name)
+# print(personSelf.age)
+# person1 = Person()
+# person1.name = "Dan"
+# person1.age = 20
+# person1.isMale = True
+# print(person1.name)
+# print(person1.age)
+#
+#
+# person2 = Person()
+# person2.name = "Victoria"
+# person2.age = 30
+# person2.isMale = False
+# print(person2.name)
+# print(person2)
 
     # def __init__(self, name, age):
     #     self.name = name
