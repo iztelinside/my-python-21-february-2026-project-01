@@ -1,4 +1,9 @@
+#20 – Декораторы функций
+import webbrowser
 
+def open__page(url):
+    webbrowser.open(url)
+open__page('https://en.wikipedia.org/wiki/Main_Page')
 #19 – Наследование, инкапсуляция, полиморфизм
 class Techno:
     name = None
@@ -20,12 +25,12 @@ class Car(Techno):
         print("Car Name:", self.name, "Year:", self.year, "All Wheel Drive:", self.awd)
 
 class Plane(Techno):
-    maxSpeed = 2000
-    def __init__(self, name, year, maxSpeed):
+    maxspeed = 2000
+    def __init__(self, name, year, maxspeed):
         super().__init__(name, year)
-        self.maxSpeed = maxSpeed
+        self.maxspeed = maxspeed
     def get_info(self):
-        print("Plane Name:", self.name, "Year:", self.year, "Max Speed:", self.maxSpeed)
+        print("Plane Name:", self.name, "Year:", self.year, "Max Speed:", self.maxspeed)
 
 class Bike(Techno):
     country = "Italy"
